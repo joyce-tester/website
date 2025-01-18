@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom right, #e3f2fd, #f1f8e9);
+}
+
+h1, h2, h3 {
+    margin: 0 0 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #004d40, #00796b);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #80cbc4;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+}
+
+#about {
+    background: #f4f4f4;
+    text-align: center;
+    position: relative;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('ai-background.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#projects {
+    background: #eaeaea;
+    position: relative;
+}
+
+#projects::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('ai-network.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#projects .project {
+    margin-bottom: 20px;
+}
+
+#projects .project h3 {
+    color: #004d40;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+    color: #00796b;
+}
+
+/* AI Highlights */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer::before {
+    content: "AI Powered";
+    font-size: 0.8em;
+    color: #80cbc4;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
