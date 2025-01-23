@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Master Programming Languages</h2>
+            <p>Learn programming with hands-on projects and video tutorials.</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="{{ url_for('static', filename='python-image.jpg') }}" alt="Python Programming">
+                <h3>Python Programming</h3>
+                <p>Learn Python from basics to advanced topics.</p>
+                <a href="{{ url_for('python') }}" class="button">Start Learning</a>
+            </div>
+            <div class="course-card">
+                <img src="{{ url_for('static', filename='java-image.jpg') }}" alt="Java Programming">
+                <h3>Java Programming</h3>
+                <p>Master Java for robust software development.</p>
+                <a href="{{ url_for('java') }}" class="button">Start Learning</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .card p {
+            margin: 10px 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .details {
+            display: none;
+            margin-top: 15px;
+        }
+        .details ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .details ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python Course Plan</h1>
+
+        <!-- Week 1 -->
+        <div class="card" onclick="toggleDetails('week1-details')">
+            <h3>Week 1: Introduction to Python</h3>
+            <p>A beginner-friendly introduction to Python basics and setup.</p>
+            <div id="week1-details" class="details">
+                <ul>
+                    <li>Setting up Python and IDE</li>
+                    <li>Writing your first Python program</li>
+                    <li>Python syntax, variables, and comments</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="card" onclick="toggleDetails('week2-details')">
+            <h3>Week 2: Python Basics</h3>
+            <p>Learn the essentials of Python programming, including input/output and control flow.</p>
+            <div id="week2-details" class="details">
+                <ul>
+                    <li>Basic arithmetic and comparison operations</li>
+                    <li>Control flow: if, elif, else</li>
+                    <li>String operations and slicing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="card" onclick="toggleDetails('week3-details')">
+            <h3>Week 3: Loops and Functions</h3>
+            <p>Master loops and learn to write reusable functions in Python.</p>
+            <div id="week3-details" class="details">
+                <ul>
+                    <li>Loops: for and while</li>
+                    <li>Defining and calling functions</li>
+                    <li>Scope of variables</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Additional weeks can be added similarly -->
+
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

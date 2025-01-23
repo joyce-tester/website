@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Education Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Learn Programming</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Master Programming Languages</h2>
+            <p>Learn programming with hands-on projects and video tutorials.</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="{{ url_for('static', filename='python-image.jpg') }}" alt="Python Programming">
+                <h3>Python Programming</h3>
+                <p>Learn Python from basics to advanced topics.</p>
+                <a href="{{ url_for('python') }}" class="button">Start Learning</a>
+            </div>
+            <div class="course-card">
+                <img src="{{ url_for('static', filename='java-image.jpg') }}" alt="Java Programming">
+                <h3>Java Programming</h3>
+                <p>Master Java for robust software development.</p>
+                <a href="{{ url_for('java') }}" class="button">Start Learning</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Learn Programming. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
